@@ -12,6 +12,6 @@ Neat little program that can encrypt and decrypt files
 * Download/Update Python and required libraries
 * Put folder of script into path (Enviroment variables for windows)
 * Add .PY extension on Pathext (Enviroment variables for windows)
-* Encrypt by typing AES -e <filename> -k <key> in desired path of target file
-* Decrypt by typing AES -d <filename> -k <key> in desired path of target file
+* Encrypt by typing AES -e "filename.file" -k "key phrase" in desired path of target file
+* Decrypt by typing AES -d "filename.file" -k "key phrase" in desired path of target file
 
