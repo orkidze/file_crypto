@@ -1,7 +1,14 @@
+# Author: Haroldas Orestas
+# Project: File encryption / decryption program
+
 from crypto_AES_byte import AESCipher_bytes
 import sys
 import argparse
 import os
+
+# Method that encrypts the file
+# input: Filename - String of a file name (with an extension)
+# password: String of a key that is used to encrypt
 
 def encrypt(filename, password):
     data_reader = open(filename, 'rb')
@@ -11,6 +18,9 @@ def encrypt(filename, password):
     data_writer.write(cypher)
     data_writer.close()
 
+# Method that decrypts the file
+# input: Filename - String of a file name (with an extension)
+# password: String of a key that is used to decrypt
 
 def decrypt(filename, password):
     data_reader = open(filename, 'rb')
@@ -20,6 +30,8 @@ def decrypt(filename, password):
     data_writer.write(plain)
     data_writer.close()
 
+
+# Below is program logic
 
 parser = argparse.ArgumentParser()
 
@@ -37,12 +49,12 @@ def help():
 
 if(args.password != None):
     if(args.efilename != None):
-        print('String encrypting...')
+        print('Starting encrypting...')
         encrypt(os.getcwd()+'\\'+args.efilename,args.password)
         print('Done...')
     else:
         if(args.dfilename != None):
-            print('String decrypting...')
+            print('Starting decrypting...')
             decrypt(os.getcwd()+'\\'+args.dfilename, args.password)
             print('Done...')
         else:

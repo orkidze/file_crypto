@@ -1,3 +1,6 @@
+# Author: Haroldas Orestas
+# Project: File encryption / decryption program
+
 from hashlib import md5
 from base64 import b64decode
 from base64 import b64encode

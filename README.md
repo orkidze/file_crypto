@@ -5,6 +5,7 @@ Neat little program that can encrypt and decrypt files
 * Encryption algorithm AES (Encrypting 256bit blocks)
 * Key size 256bit
 * MD5 (message-digest algorithm) is used to hash the key
+* So far only supports files with size less than 2Gb
 * Use passphrase with more than 14 symbols for extra security
 * To be able to type key with spaces put it in "Double quotation marks"
 
