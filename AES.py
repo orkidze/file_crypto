@@ -2,7 +2,6 @@
 # Project: File encryption / decryption program
 
 from crypto_AES_byte import AESCipher_bytes
-import sys
 import argparse
 import os
 
